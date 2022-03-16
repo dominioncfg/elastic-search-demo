@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSearchDemo.SeedProccess", "ElasticSearchDemo.SeedProccess\ElasticSearchDemo.SeedProccess.csproj", "{312EDA36-DC8A-4B8C-BD94-D041345F06B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSearchDemo.Web", "ElasticSearchDemo.Web\ElasticSearchDemo.Web.csproj", "{65ACD549-DA4E-4EAF-80D4-6C4697680E57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{F0135135-2D06-4C83-B360-4FFE01B2AE8B}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+		readme.txt = readme.txt
+		tasks.txt = tasks.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSearchDemo.DomainModel", "ElasticSearchDemo.DomainModel\ElasticSearchDemo.DomainModel.csproj", "{F09C44C6-FF67-43D3-B7F9-F7FD344F873E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticSearchDemo.Infraestructure", "ElasticSearchDemo.Infraestructure\ElasticSearchDemo.Infraestructure.csproj", "{0EC19278-ABDC-48F3-BD1C-A9B28B9B5FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{312EDA36-DC8A-4B8C-BD94-D041345F06B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312EDA36-DC8A-4B8C-BD94-D041345F06B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312EDA36-DC8A-4B8C-BD94-D041345F06B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312EDA36-DC8A-4B8C-BD94-D041345F06B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65ACD549-DA4E-4EAF-80D4-6C4697680E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65ACD549-DA4E-4EAF-80D4-6C4697680E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65ACD549-DA4E-4EAF-80D4-6C4697680E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65ACD549-DA4E-4EAF-80D4-6C4697680E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F09C44C6-FF67-43D3-B7F9-F7FD344F873E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09C44C6-FF67-43D3-B7F9-F7FD344F873E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09C44C6-FF67-43D3-B7F9-F7FD344F873E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09C44C6-FF67-43D3-B7F9-F7FD344F873E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC19278-ABDC-48F3-BD1C-A9B28B9B5FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC19278-ABDC-48F3-BD1C-A9B28B9B5FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC19278-ABDC-48F3-BD1C-A9B28B9B5FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC19278-ABDC-48F3-BD1C-A9B28B9B5FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76E2BB0C-0FE8-4FFA-A1C0-9D3818AE2E20}
+	EndGlobalSection
+EndGlobal

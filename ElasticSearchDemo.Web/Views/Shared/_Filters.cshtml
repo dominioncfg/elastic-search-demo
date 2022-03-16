@@ -1,0 +1,112 @@
+﻿@model SearchFiltersViewModel
+
+
+<div class="row">
+    <div class="col">
+        <div>
+            <h6 class="font-weight-bold">Designations</h6>
+        </div>
+        <div>
+            <div class="list-group">
+                @foreach (var designation in Model.Designations)
+                {
+                    string activeClass = designation.IsActive ? "active" : "";
+                    <a href="@designation.GoUrl" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @activeClass">
+                        @designation.Name
+                        <span class="badge badge-primary badge-pill">@designation.Count</span>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col">
+        <div>
+            <h6 class="font-weight-bold">Genders</h6>
+        </div>
+        <div>
+            <div class="list-group">
+                @foreach (var gender in Model.Genders)
+                {
+                    string activeClass = gender.IsActive ? "active" : "";
+                    <a href="@gender.GoUrl" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @activeClass">
+                        @gender.Name
+                        <span class="badge badge-primary badge-pill">@gender.Count</span>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col">
+        <div>
+            <h6 class="font-weight-bold">Salary Ranges</h6>
+        </div>
+        <div>
+            <div class="list-group">
+                @foreach (var range in Model.SalaryRanges)
+                {
+                    string activeClass = range.IsActive ? "active" : "";
+                    <a href="@range.GoUrl" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @activeClass">
+                        @range.Name
+                        <span class="badge badge-primary badge-pill">@range.Count</span>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col">
+        <div>
+            <h6 class="font-weight-bold">Age Ranges</h6>
+        </div>
+        <div>
+            <div class="list-group">
+                @foreach (var range in Model.AgeRanges)
+                {
+                    string activeClass = range.IsActive ? "active" : "";
+                    <a href="@range.GoUrl" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @activeClass">
+                        @range.Name
+                        <span class="badge badge-primary badge-pill">@range.Count</span>
+                    </a>
+                }
+            </div>            
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col">
+        <div>
+            <h6 class="font-weight-bold">Date Of Joining</h6>
+        </div>
+        <div>
+            <div class="list-group">
+                @foreach (var range in Model.DateOfJoiningRanges)
+                {
+                    string activeClass = range.IsActive ? "active" : "";
+                    <a href="@range.GoUrl" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @activeClass">
+                        @range.Name
+                        <span class="badge badge-primary badge-pill">@range.Count</span>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="col">
+        <div>
+            <h6 class="font-weight-bold">Maritial Status</h6>
+        </div>
+        <div>
+            <div class="list-group">
+                @foreach (var maritialStatus in Model.MaritialStatusTypes)
+                {
+                    string activeClass = maritialStatus.IsActive ? "active" : "";
+                    <a href="@maritialStatus.GoUrl" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @activeClass">
+                        @maritialStatus.Name
+                        <span class="badge badge-primary badge-pill">@maritialStatus.Count</span>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

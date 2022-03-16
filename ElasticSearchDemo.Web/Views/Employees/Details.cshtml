@@ -1,0 +1,54 @@
+﻿@model EmployeeDetailsViewModel
+@{
+    var employee = Model.Employee;
+    ViewBag.Title = $"Employee Search Details {Model.Employee.FirstName} - {Model.Employee.LastName}";
+}
+<div class="row">
+    <div class="col">
+        <h2>@employee.FirstName @employee.LastName</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label>Id</label>
+            <label class="form-control">@employee.Id</label>
+        </div>
+        <div class="form-group">
+            <label>Name</label>
+            <label class="form-control">@employee.FirstName  @employee.LastName</label>
+        </div>
+        <div class="form-group">
+            <label>Designation</label>
+            <label class="form-control">@employee.Designation</label>
+        </div>
+        <div class="form-group">
+            <label>Salary</label>
+            <label class="form-control">@employee.Salary</label>
+        </div>
+        <div class="form-group">
+            <label>Date Of Joining</label>
+            <label class="form-control">@employee.DateOfJoining.ToShortDateString()</label>
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <label class="form-control">@employee.Address</label>
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <label class="form-control">@employee.Gender</label>
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <label class="form-control">@employee.Age</label>
+        </div>
+        <div class="form-group">
+            <label>Marital Status</label>
+            <label class="form-control">@employee.MaritalStatus</label>
+        </div>
+        <div class="form-group">
+            <label>Interests</label>
+            <label class="form-control">@employee.Interests</label>
+        </div>
+    </div>
+</div>

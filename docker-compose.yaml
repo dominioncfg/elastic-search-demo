@@ -1,0 +1,41 @@
+version: "3.8"
+services:
+  elastic-search:
+    container_name: elasic-be
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+    ports:
+      - "9200:9200"
+    environment:
+      - discovery.type=single-node
+      - node.name=main-node
+      - cluster.name=docker-cluster
+    volumes:
+      - data01:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+    restart: always
+  kibana:
+    container_name: elasic-fe
+    image: docker.elastic.co/kibana/kibana:7.9.2
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elastic-search:9200/
+      - SERVER_NAME=localhost
+    networks:
+      - elastic
+    depends_on: 
+      - elastic-search
+    restart: always
+networks:
+  elastic:
+    driver: bridge
+volumes:
+  data01:
+    driver: local
+  data02:
+    driver: local
+
+    
+  
+
